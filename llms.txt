@@ -1,0 +1,13 @@
+# gamepad
+
+> gamepad is the planned Pure Go gamepad and joystick input library of the GoGPU ecosystem. It has no code yet: the repository holds the design and reserves the import path, so there is nothing to install or call today. Planned: a standard gamepad layout (positional buttons, six axes, D-pad), controller mappings from the SDL community gamecontrollerdb.txt, hot-plug events and basic rumble. The design is SDL3's two layers: a raw joystick layer per OS (XInput on Windows, evdev on Linux, IOKit HID on macOS, the W3C Gamepad API in the browser) and a mapping layer on top. Zero CGO is a goal.
+
+## Docs
+
+- [README](https://github.com/gogpu/gamepad/blob/main/README.md): planned features, platforms, architecture
+- [Tracking issue](https://github.com/gogpu/gogpu/issues/476): status and discussion
+
+## Ecosystem
+
+- [GoGPU on GitHub](https://github.com/gogpu): all modules
+- [gogpu](https://pkg.go.dev/github.com/gogpu/gogpu): the app framework; keyboard, mouse and pointer input are there today
